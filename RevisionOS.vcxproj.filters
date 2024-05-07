@@ -19,4 +19,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="maths.txt" />
+    <Text Include="english.txt" />
+    <Text Include="biology.txt" />
+    <Text Include="chemistry.txt" />
+    <Text Include="physics.txt" />
+    <Text Include="computing.txt" />
+    <Text Include="spanish.txt" />
+    <Text Include="geography.txt" />
+    <Text Include="history.txt" />
+  </ItemGroup>
 </Project>
