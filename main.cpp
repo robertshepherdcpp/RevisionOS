@@ -68,6 +68,8 @@ int main() {
     bool physics_window = false;
     bool chemistry_window = false;
 
+    bool hstry_structure_q = false;
+
     bool is_flashcard_question = true;
     bool is_flashcard_answer = false;
     int current_flashcard_index = 0;
@@ -288,6 +290,29 @@ int main() {
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::Begin("History");
 
+            if (ImGui::Button("How to strucuture questions?"))
+            {
+                hstry_structure_q = true;
+            }
+
+            ImGui::End();
+        }
+
+        if (hstry_structure_q)
+        {
+            ImGui::SetNextWindowSize(ImVec2(1000, 800));
+            ImGui::SetNextWindowPos(ImVec2(0, 0));
+            ImGui::Begin("History Question Structure");
+            ImGui::TextWrapped("6 Marker:\n\n First sentence must answer the question --> \"The author gives the impression that ... was ...\""
+                               "\nThen back it up by picking 2 or 3 qutoes --> \"This is evident when it states\""
+                               "\nOne sentance on the tone used by the author and how it shows their view --> \"The ... tone is shown by the use of words such as...\""
+                               "\nComment on what the author has failed to acknowledge or fully appreciate --> \"However, the author has failed to acknowledge ... that ...\""
+                               "\n\n\n8 Marker: \n\n Question is looking for 2 effects so --> \"one effect of ... \" and \"another effect of ... \""
+                               "\n\n\n16 Marker: \n\n Para 1: overview of arguements in A, B and C. Then say however this evidence in A, B and C to suggest otherwise"
+                               "\nPara 2: Do the arguement in the question using quotes from extract C and A and B. Then own knowledge"
+                               "\nPara 3: Find different arguement, evidence from A, B, C"
+                               "Conclusion say although arguement from 2 or 3 main reason, 2 or 3 say why it is the right argument and why disagree"
+                               );
             ImGui::End();
         }
 
