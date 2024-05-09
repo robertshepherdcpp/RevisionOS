@@ -67,6 +67,7 @@ int main() {
     bool biology_window = false;
     bool physics_window = false;
     bool chemistry_window = false;
+    bool geog_fieldwork = false;
 
     bool hstry_structure_q = false;
 
@@ -280,6 +281,22 @@ int main() {
             ImGui::SetNextWindowSize(ImVec2(1000, 800));
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::Begin("Geography");
+
+            if (ImGui::Button("Fieldwork"))
+            {
+                geog_fieldwork = true;
+            }
+
+            ImGui::End();
+        }
+
+        if (geog_fieldwork)
+        {
+            ImGui::SetNextWindowSize(ImVec2(1000, 800));
+            ImGui::SetNextWindowPos(ImVec2(0, 0));
+            ImGui::Begin("Geography Fieldwork");
+
+            ImGui::TextWrapped("Ashbrook");
 
             ImGui::End();
         }
