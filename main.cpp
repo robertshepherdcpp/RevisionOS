@@ -68,6 +68,7 @@ int main() {
     bool physics_window = false;
     bool chemistry_window = false;
     bool geog_fieldwork = false;
+    bool maths_questions = false;
 
     bool hstry_structure_q = false;
 
@@ -365,6 +366,19 @@ int main() {
             ImGui::SetNextWindowSize(ImVec2(1000, 800));
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::Begin("Maths");
+
+            maths_questions = true;
+
+            ImGui::End();
+        }
+
+        if (maths_questions)
+        {
+            ImGui::SetNextWindowSize(ImVec2(1000, 800));
+            ImGui::SetNextWindowPos(ImVec2(0, 0));
+            ImGui::Begin("English");
+
+            ImGui::TextWrapped("factorize x^2 + x - 6");
 
             ImGui::End();
         }
