@@ -379,6 +379,7 @@ int main() {
             ImGui::Begin("English");
 
             ImGui::TextWrapped("factorize x^2 + x - 6");
+            ImGui::TextWrapped("What is the quadratic forumula?");
 
             ImGui::End();
         }
