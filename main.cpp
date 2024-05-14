@@ -71,6 +71,7 @@ int main() {
     bool maths_questions = false;
 
     bool hstry_structure_q = false;
+    bool interact_math_questions = false;
 
     bool is_flashcard_question = true;
     bool is_flashcard_answer = false;
@@ -380,8 +381,28 @@ int main() {
 
             ImGui::TextWrapped("factorize x^2 + x - 6");
             ImGui::TextWrapped("What is the quadratic forumula?");
+            
+            if (ImGui::Button("Interact Questions"))
+            {
+                interact_math_questions = true;
+            }
 
             ImGui::End();
+        }
+
+        if (interact_math_questions)
+        {
+            int x1 = get_random_number(10) - 5;
+            int y1 = get_random_number(10) - 5;
+            int x2 = get_random_number(10) - 5;
+            int y2 = get_random_number(10) - 5;
+
+            std::string first_coord = "(" + std::to_string(x1) + ", " + std::to_string(y1) + ")";
+            std::string second_coord = "(" + std::to_string(x2) + ", " + std::to_string(y2) + ")";
+
+            std::string question_coords = "What is the equation of the line that passes through points: " + first_coord + " and " + second_coord;
+
+            ImGui::TextWrapped(question_coords.c_str());
         }
 
         if (biology_window)
