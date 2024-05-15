@@ -381,6 +381,7 @@ int main() {
 
             ImGui::TextWrapped("factorize x^2 + x - 6");
             ImGui::TextWrapped("What is the quadratic forumula?");
+            ImGui::TextWrapped("What is (x^2)^3");
             
             if (ImGui::Button("Interact Questions"))
             {
