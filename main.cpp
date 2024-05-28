@@ -412,6 +412,8 @@ int main() {
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::Begin("Biology");
 
+            ImGui::TextWrapped("What are the organelles in a plant cell?");
+
             ImGui::End();
         }
 
