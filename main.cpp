@@ -423,6 +423,8 @@ int main() {
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::Begin("Physics");
 
+            ImGui::TextWrapped("f = ma");
+
             ImGui::End();
         }
 
