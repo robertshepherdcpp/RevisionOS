@@ -424,6 +424,7 @@ int main() {
             ImGui::Begin("Physics");
 
             ImGui::TextWrapped("f = ma");
+            ImGui::TextWrapped("V = f lambda");
 
             ImGui::End();
         }
