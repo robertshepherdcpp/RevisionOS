@@ -435,6 +435,8 @@ int main() {
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::Begin("Chemistry");
 
+            ImGui::TextWrapped("mole = (mass in grams) / (relative molecular mass)")
+
             ImGui::End();
         }
 
