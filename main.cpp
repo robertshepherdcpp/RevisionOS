@@ -423,6 +423,7 @@ int main() {
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::Begin("Physics");
 
+            ImGui::TextWrapped("E = QV");
             ImGui::TextWrapped("f = ma");
             ImGui::TextWrapped("V = f lambda");
 
@@ -435,7 +436,7 @@ int main() {
             ImGui::SetNextWindowPos(ImVec2(0, 0));
             ImGui::Begin("Chemistry");
 
-            ImGui::TextWrapped("mole = (mass in grams) / (relative molecular mass)")
+            ImGui::TextWrapped("mole = (mass in grams) / (relative molecular mass)");
 
             ImGui::End();
         }
