@@ -426,6 +426,7 @@ int main() {
             ImGui::TextWrapped("E = QV");
             ImGui::TextWrapped("f = ma");
             ImGui::TextWrapped("V = f lambda");
+            ImGui::TextWrapped("w = f/d");
 
             ImGui::End();
         }
