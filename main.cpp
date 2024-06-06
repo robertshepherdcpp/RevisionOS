@@ -439,6 +439,7 @@ int main() {
             ImGui::Begin("Chemistry");
 
             ImGui::TextWrapped("mole = (mass in grams) / (relative molecular mass)");
+            ImGui::TextWrapped("Ionic bond: the electrostatic attraction between 2 oppositely charged ions");
 
             ImGui::End();
         }
